@@ -23,13 +23,13 @@ The ConfigMap used in this guide is as follows:
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: vllm-llama3-8b-instruct-adapters
+  name: vllm-qwen3-32b-adapters
 data:
   configmap.yaml: |
     vLLMLoRAConfig:
-      name: vllm-llama3-8b-instruct-adapters
+      name: vllm-qwen3-32b-adapters
       port: 8000
-      defaultBaseModel: meta-llama/Llama-3.1-8B-Instruct
+      defaultBaseModel: Qwen/Qwen3-32B
       ensureExist:
         models:
         - id: food-review-v1
@@ -62,7 +62,7 @@ metadata:
 spec:
   poolRef:
     group: inference.networking.k8s.io
-    name: vllm-llama3-8b-instruct
+    name: vllm-qwen3-32b
   rules:
     - matches:
         - model:
@@ -138,7 +138,7 @@ metadata:
 spec:
   poolRef:
     group: inference.networking.k8s.io
-    name: vllm-llama3-8b-instruct
+    name: vllm-qwen3-32b
   rules:
     - matches:
         - model:
@@ -213,13 +213,13 @@ Update the LoRA syncer ConfigMap to list the older version under the `ensureNotE
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: vllm-llama3-8b-instruct-adapters
+  name: vllm-qwen3-32b-adapters
 data:
   configmap.yaml: |
     vLLMLoRAConfig:
-      name: vllm-llama3-8b-instruct-adapters
+      name: vllm-qwen3-32b-adapters
       port: 8000
-      defaultBaseModel: meta-llama/Llama-3.1-8B-Instruct
+      defaultBaseModel: Qwen/Qwen3-32B
       ensureExist:
         models:
         - id: food-review-v2

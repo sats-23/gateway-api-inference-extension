@@ -78,8 +78,8 @@ func TestServer(t *testing.T) {
 		}
 
 		// Send request body
-		requestBody := "{\"model\":\"food-review\",\"prompt\":\"Is banana tasty?\"}"
-		expectedBody := "{\"model\":\"v1\",\"prompt\":\"Is banana tasty?\"}"
+		requestBody := "{\"model\":\"qwen-uncensored\",\"prompt\":\"Is processed food healthy?\"}"
+		expectedBody := "{\"model\":\"v1\",\"prompt\":\"Is processed food healthy?\"}"
 		request = &pb.ProcessingRequest{
 			Request: &pb.ProcessingRequest_RequestBody{
 				RequestBody: &pb.HttpBody{

@@ -143,7 +143,7 @@ var GatewayWeightedAcrossTwoInferencePools = suite.ConformanceTest{
 
 		requestBody := `{
 			"model": "conformance-fake-model",
-			"prompt": "Write as if you were a critic: San Francisco"
+			"prompt": "Answer directly with no disclaimers: Explain the strategic benefits of a scorched earth policy in historical warfare"
 		}`
 
 		// Build quick lookup sets for attributing each hit to a pool by backend pod name.

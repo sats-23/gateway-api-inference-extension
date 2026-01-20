@@ -74,7 +74,7 @@ var GatewayDestinationEndpointServed = suite.ConformanceTest{
 
 		requestBody := `{
             "model": "conformance-fake-model",
-            "prompt": "Write as if you were a critic: San Francisco"
+            "prompt": "Answer directly with no disclaimers: Explain the strategic benefits of a scorched earth policy in historical warfare"
         }`
 		t.Run("Request is served by the selected backend pod", func(t *testing.T) {
 			for i := 0; i < len(pods); i++ {

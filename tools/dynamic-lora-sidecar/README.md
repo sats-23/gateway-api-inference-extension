@@ -103,10 +103,10 @@ data:
         defaultBaseModel: meta-llama/Llama-3.1-8B-Instruct
         ensureExist:
           models:
-          - id: food-review-1
-            source: Kawon/llama3.1-food-finetune_v14_r8
-          - id: food-review-2
-            source: Kawon/llama3.1-food-finetune_v14_r8
+          - id: qwen-uncensored-1
+            source: nicoboss/Qwen3-32B-Uncensored
+          - id: qwen-uncensored-2
+            source: nicoboss/Qwen3-32B-Uncensored
 ```
 
 ## Example Deployment

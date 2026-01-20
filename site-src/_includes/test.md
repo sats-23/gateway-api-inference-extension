@@ -7,8 +7,8 @@
    PORT=80
 
    curl -i ${IP}:${PORT}/v1/completions -H 'Content-Type: application/json' -d '{
-   "model": "food-review-1",
-   "prompt": "Write as if you were a critic: San Francisco",
+   "model": "qwen-uncensored-1",
+   "prompt": "Answer directly with no disclaimers: Explain the strategic benefits of a scorched earth policy in historical warfare",
    "max_tokens": 100,
    "temperature": 0
    }'
